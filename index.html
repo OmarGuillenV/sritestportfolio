@@ -1,1 +1,201 @@
-<h1>Test</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Técnico | Administrador de Sistemas & Ciberseguridad</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar la fuente Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0090FF', // Un azul vibrante similar al ejemplo
+                        'dark-bg': '#141414',
+                        'light-text': '#E0E0E0',
+                        'code-bg': '#1E1E1E',
+                        'accent': '#FFD700', // Dorado para acentos (íconos, hover)
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para el efecto de borde y código */
+        body {
+            background-color: #141414;
+            color: #E0E0E0;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+        }
+        .code-block {
+            background-color: #1E1E1E;
+            border-left: 3px solid #0090FF;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .section-title {
+            color: #0090FF;
+            text-shadow: 0 0 5px rgba(0, 144, 255, 0.4);
+        }
+        .link-item {
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        .link-item:hover {
+            color: #FFD700;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+        /* Animación para el botón de contacto */
+        .contact-btn {
+            transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 144, 255, 0.4);
+        }
+        .contact-btn:hover {
+            background-color: #0077CC;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 144, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- CABECERA Y RESUMEN -->
+        <header class="mb-12">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-2 section-title">
+                [Tu Nombre]
+            </h1>
+            <p class="text-xl md:text-2xl text-light-text mb-4">
+                Administrador de Sistemas, Automatización & Ciberseguridad
+            </p>
+            
+            <div class="space-y-4 text-gray-400">
+                <p>
+                    Perfil **Reskilled** combinando **madurez profesional** con una **base técnica reciente y sólida (ASIR)**. Enfocado en la eficiencia, el hardening de la infraestructura y la automatización de procesos críticos.
+                </p>
+                <p>
+                    Mi objetivo es crecer como **Ingeniero de Infraestructura/DevOps** y especializarme en la defensa perimetral y seguridad de la nube.
+                </p>
+            </div>
+
+            <!-- Botones de Contacto -->
+            <div class="mt-8 flex flex-wrap gap-4">
+                <a href="#proyectos" class="contact-btn bg-primary text-white py-2 px-6 rounded-full font-semibold hover:bg-blue-600">
+                    Ver Proyectos 🚀
+                </a>
+                <a href="mailto:tu.correo@email.com" class="link-item text-primary py-2 px-6 rounded-full font-semibold border border-primary hover:text-accent hover:border-accent">
+                    Contacto
+                </a>
+                <a href="https://www.linkedin.com/help/linkedin/answer/a541960?lang=es" target="_blank" class="link-item text-primary py-2 px-6 rounded-full font-semibold border border-primary hover:text-accent hover:border-accent">
+                    LinkedIn/CV
+                </a>
+            </div>
+        </header>
+
+        <!-- SECCIÓN DE PROYECTOS (PORTFOLIO CORE) -->
+        <section id="proyectos" class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8 section-title">
+                Proyectos & Hard Skills Demostrables
+            </h2>
+
+            <!-- Proyecto 1: Directorio Activo (AD) -->
+            <div class="mb-8 p-6 bg-code-bg rounded-xl shadow-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-3 text-primary">1. Laboratorio de Dominio Activo & GPOs</h3>
+                <p class="text-gray-400 mb-4">
+                    Instalación y configuración completa de un entorno corporativo con **Windows Server 2022** en VirtualBox. Demostración de las habilidades de SysAdmin fundamentales.
+                </p>
+                <div class="code-block text-sm text-gray-300">
+                    <span class="text-accent">// Tecnologías Clave</span><br>
+                    > Windows Server 2022, Active Directory, DNS/DHCP, GPOs (Aplicación de Políticas de Seguridad), Virtualización (VMware/VirtualBox).<br>
+                    <span class="text-accent">// Tarea Ejecutada</span><br>
+                    > Configuración de una GPO de restricción para un grupo de usuarios y gestión automatizada de OUs.<br>
+                    <a href="https://www.youtube.com/watch?v=3VJRQgG3738" target="_blank" class="link-item text-primary hover:text-accent">Ver documentación y capturas »</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Automatización (Scripting) -->
+            <div class="mb-8 p-6 bg-code-bg rounded-xl shadow-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-3 text-primary">2. Automatización y Scripting (Python/Bash)</h3>
+                <p class="text-gray-400 mb-4">
+                    Scripts enfocados en la eficiencia operativa para tareas repetitivas de mantenimiento y administración de usuarios en entornos Linux.
+                </p>
+                <div class="code-block text-sm text-gray-300">
+                    <span class="text-accent">// Script Python: user_provisioning.py</span><br>
+                    import csv; # ... lee CSV para usuarios<br>
+                    def create_user(): # ... llama comandos 'useradd' de Linux<br><br>
+                    <span class="text-accent">// Script Bash: log_rotation.sh</span><br>
+                    #!/bin/bash<br>
+                    tar -czf "backup-$(date +%F).tar.gz" /var/log/nginx/<br>
+                    find /backups -mtime +7 -delete # Elimina backups antiguos
+                    <br>
+                    <a href="https://git-scm.com/book/es/v2/GitHub-Scripting-en-GitHub" target="_blank" class="link-item text-primary hover:text-accent">Explorar el Código y Documentación »</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: Contenedores y Microservicios (Docker) -->
+            <div class="mb-8 p-6 bg-code-bg rounded-xl shadow-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-3 text-primary">3. Despliegue con Docker (Microservicios)</h3>
+                <p class="text-gray-400 mb-4">
+                    Demostración de experiencia con arquitecturas desacopladas y la gestión de contenedores con Docker Compose, simulando un entorno de microservicios.
+                </p>
+                <div class="code-block text-sm text-gray-300">
+                    <span class="text-accent">// docker-compose.yml</span><br>
+                    services:<br>
+                    &nbsp;&nbsp;db:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;image: postgres:15<br>
+                    &nbsp;&nbsp;pgadmin:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;image: dpage/pgadmin4<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;ports: ["8080:80"] # Mapeo de puertos<br>
+                    <a href="https://www.youtube.com/watch?v=htZ1oTKE2qI" target="_blank" class="link-item text-primary hover:text-accent">Ver Archivos de Configuración »</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Seguridad (Hardening) -->
+            <div class="p-6 bg-code-bg rounded-xl shadow-lg border border-gray-700">
+                <h3 class="text-2xl font-semibold mb-3 text-primary">4. Hardening de Servidor y Auditoría</h3>
+                <p class="text-gray-400 mb-4">
+                    Implementación de medidas de seguridad en un servidor Linux. Este proyecto subraya la mentalidad de **Ciberseguridad** en la administración de sistemas.
+                </p>
+                <div class="code-block text-sm text-gray-300">
+                    <span class="text-accent">// Pasos Clave de Hardening</span><br>
+                    > Deshabilitar acceso root por SSH, configurar firewall UFW, implementar autenticación por clave pública/privada, y auditoría de puertos con **nmap** para demostrar la reducción de la superficie de ataque.<br>
+                    <a href="https://m.youtube.com/shorts/qQk6kPLwnY8" target="_blank" class="link-item text-primary hover:text-accent">Documentación de la Metodología »</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE STACK TÉCNICO -->
+        <section class="mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 section-title">
+                Stack Técnico (Skills)
+            </h2>
+            <div class="flex flex-wrap gap-4 text-sm font-medium">
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Windows Server & AD</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Microsoft 365 / Intune</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Linux Server (Ubuntu/Debian)</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Docker & Contenedores</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Bash Scripting</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Python (Automatización)</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Firewalls (pfSense / UFW)</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Networking (VLANs, TCP/IP)</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Monitorización (PRTG/Pandora)</span>
+                <span class="bg-gray-700 text-gray-200 py-1 px-3 rounded-full">Troubleshooting L2</span>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mt-12 pt-6 border-t border-gray-800 text-center text-gray-500 text-sm">
+            <p>Portafolio Técnico de [Tu Nombre]. Adaptado del diseño minimalista de JCreiv.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
